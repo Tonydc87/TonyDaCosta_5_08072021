@@ -25,11 +25,15 @@ fetch('http://localhost:3000/api/cameras')
           productContainer.appendChild(productDescription)
 
           const productPrice = document.createElement('span')
-          productPrice.textContent = `${camera.price / 100}.00 €`
+          productPrice.textContent = `${camera.price / 100}.00€`
           productContainer.appendChild(productPrice)
 
           productsContainer.appendChild(productContainer)
         }
       }
+
+
+
+  
 
       
