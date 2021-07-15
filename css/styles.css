@@ -1,3 +1,4 @@
+
 .row{
   margin-top: 20px;
 }
@@ -13,7 +14,6 @@
 
 .banner img{
   object-fit: cover;
-  vertical-align: center;
   width: 20rem;
   height: 120px;
 }
@@ -28,7 +28,7 @@ nav ul{
 
 nav a{
   height: 100%;
-  font-size: 25px;
+  font-size: 22px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -48,16 +48,18 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  
 }
 
 .col-md-4{
   border-radius: 10px;
   padding: 10px;
-  margin: 5px;
-  background-color: #F3E9F1;
+  margin: 2px;
+  background-color: #F3E9F1; 
 }
 
-
+.col-md-4:hover{
+  transform:scale(1.02);
+  transition: all 1s ease;
+}
 
 
