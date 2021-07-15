@@ -10,7 +10,7 @@ fetch('http://localhost:3000/api/cameras')
       
         for (const camera of cameras) {
           const productContainer = document.createElement('div')
-          productContainer.classList = 'col-md-4'
+          productContainer.classList = 'col-md-4 shadow-lg'
       
           const productImage = document.createElement('img')
           productImage.src = camera.imageUrl
