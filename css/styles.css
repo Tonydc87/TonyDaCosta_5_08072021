@@ -54,6 +54,7 @@ img {
   background-color: #F3E9F1;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .col-md-4{

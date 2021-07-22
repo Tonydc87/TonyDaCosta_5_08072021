@@ -28,9 +28,16 @@ fetch('http://localhost:3000/api/cameras')
           productPrice.textContent = `${camera.price / 100}.00€`
           productContainer.appendChild(productPrice)
 
+          const productPage = document.createElement('a')
+          productPage.onclick = product.html
+          productContainer.appendChild(productPage)
+
           productsContainer.appendChild(productContainer)
         }
       }
+
+     
+
 
 
 
