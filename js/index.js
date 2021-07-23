@@ -15,6 +15,11 @@ fetch('http://localhost:3000/api/cameras')
           const productImage = document.createElement('img')
           productImage.src = camera.imageUrl
           productContainer.appendChild(productImage)
+
+          const productLink = document.createElement('a')
+          productLink.href = ('product.html?id=' + camera._id)
+          productLink.appendChild(productImage)
+          productContainer.appendChild(productLink)
       
           const productName = document.createElement('h2')
           productName.textContent = camera.name
@@ -27,10 +32,6 @@ fetch('http://localhost:3000/api/cameras')
           const productPrice = document.createElement('span')
           productPrice.textContent = `${camera.price / 100}.00€`
           productContainer.appendChild(productPrice)
-
-          const productPage = document.createElement('a')
-          productPage.onclick = product.html
-          productContainer.appendChild(productPage)
 
           productsContainer.appendChild(productContainer)
         }
